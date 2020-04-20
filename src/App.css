@@ -156,6 +156,35 @@
 		width: 25%;
 		text-align: left;
 	}
+	.App .column-name-container {
+		width: 95%;
+	}
+	.App .column-name-container h1 {
+		margin-top: 15px;
+		font-size: 0.9rem;
+		letter-spacing: 0;
+	}
+	.App .column-container {
+		width: 95%;
+	}
+	.App .column-container .column-1 {
+		width: 43%;
+		height: 50px;
+		background: #dcdcdc;
+		border-radius: 5px;
+	}
+	.App .column-container .column-2 {
+		width: 14%;
+		height: 50px;
+		background: #dcdcdc;
+		border-radius: 5px;
+	}
+	.App .column-container p {
+		font-family: Poppins;
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		color: #535353;
+	}
 }
 @media only screen and (max-width: 700px) {
 	.App .description {
@@ -189,9 +218,45 @@
 		font-size: 1rem;
 		line-height: 20px;
 	}
+	.App .column-name-container {
+		width: 98%;
+	}
+	.App .column-name-container .column-name-1 {
+		width: 40%;
+	}
+	.App .column-name-container .column-name-2 {
+		width: 14.5%;
+	}
+	.App .column-name-container h1 {
+		margin-top: 15px;
+		font-size: 0.7rem;
+		letter-spacing: 0;
+	}
+	.App .column-container {
+		width: 98%;
+	}
+	.App .column-container .column-1 {
+		width: 40%;
+	}
+	.App .column-container .column-2 {
+		width: 14.5%;
+	}
+	.App .column-container p {
+		font-size: 0.7rem;
+		letter-spacing: 0rem;
+		margin-top: 15px;
+	}
 }
 
 @media only screen and (max-width: 540px) {
+	.App .subheading {
+		font-size: 1rem;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	.App .subStats-container {
+		margin-top: 30px;
+	}
 	.App .india-stats {
 		width: 85%;
 	}
@@ -207,7 +272,7 @@
 		font-size: 2.5rem;
 	}
 	.App .subStats-container {
-		width: 98%;
+		width: 95%;
 	}
 	.App .subStats-container .subStats-title {
 		width: 25%;
@@ -215,10 +280,52 @@
 	.App .subStats-container .subStats-title h3 {
 		font-size: 0.8rem;
 		margin-bottom: 5px;
+		margin-top: 10px;
 	}
 	.App .subStats-container .subStats-title h1 {
 		font-size: 0.8rem;
 		line-height: 15px;
 		letter-spacing: 0;
+	}
+	.App .india-map {
+		width: 90%;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	.App .india-map path {
+		transform: scale(0.6);
+	}
+	.App .column-name-container {
+		width: 97%;
+		margin-top: -200px;
+	}
+	.App .column-name-container .column-name-1 {
+		width: 40%;
+		height: 30px;
+	}
+	.App .column-name-container .column-name-2 {
+		width: 14.5%;
+		height: 30px;
+	}
+	.App .column-name-container h1 {
+		margin-top: 10px;
+		font-size: 0.5rem;
+		letter-spacing: 0;
+	}
+	.App .column-container {
+		width: 98%;
+	}
+	.App .column-container .column-1 {
+		width: 40%;
+		height: 30px;
+	}
+	.App .column-container .column-2 {
+		width: 14.5%;
+		height: 30px;
+	}
+	.App .column-container p {
+		font-size: 0.5rem;
+		letter-spacing: 0rem;
+		margin-top: 10px;
 	}
 }
