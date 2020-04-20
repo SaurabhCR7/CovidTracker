@@ -3,6 +3,8 @@
 	height: 150px;
 	border-radius: 20px;
 	text-align: left;
+	border-width: 5px;
+	border-style: solid;
 	.subStats-title {
 		font-family: Poppins;
 		font-size: 1.4rem;
@@ -11,10 +13,54 @@
 		padding-left: 15px;
 		letter-spacing: 0.1rem;
 	}
-	h1 {
+	.subStats-count {
 		font-family: Poppins;
 		font-size: 4.5rem;
 		padding-left: 15px;
 		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.subStats {
+		width: 220px;
+	}
+	.subStats-count {
+		font-size: 3rem !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.subStats {
+		width: 140px;
+		height: 100px;
+	}
+	.subStats-title {
+		font-size: 1rem !important;
+	}
+	.subStats-count {
+		font-size: 2.5rem !important;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.subStats {
+		width: 85px;
+		height: 60px;
+		border-radius: 10px;
+		border-width: 3px;
+		.subStats-title {
+			font-size: 0.8rem !important;
+			margin-top: 5px;
+			padding-left: 3px;
+			letter-spacing: 0;
+			margin-bottom: 0px;
+		}
+		.subStats-count {
+			font-size: 1.3rem !important;
+			padding-left: 3px;
+			letter-spacing: 0;
+			margin-top: 0px;
+		}
 	}
 }

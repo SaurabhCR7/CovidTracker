@@ -8,7 +8,7 @@ function SubStats(props) {
 			className="subStats"
 			style={{
 				backgroundColor: props.color,
-				border: `5px solid ${props.border}`,
+				borderColor: `${props.border}`,
 			}}
 		>
 			<h3

@@ -147,3 +147,78 @@
 .App .india-map path:hover {
 	stroke: black;
 }
+
+@media only screen and (max-width: 1300px) {
+	.App .india-stats {
+		width: 80%;
+	}
+	.App .subStats-container .subStats-title {
+		width: 25%;
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.App .description {
+		font-size: 1.8rem;
+	}
+	.App .india-stats .stat-row .stat {
+		width: 49%;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	.App .india-stats .stat-row .stat img {
+		height: 60px;
+		width: 60px;
+	}
+	.App .india-stats .stat-row .stat h3 {
+		font-size: 1.3rem;
+	}
+	.App .india-stats .stat-row .stat h2 {
+		font-size: 3rem;
+	}
+	.App .subStats-container {
+		width: 95%;
+	}
+	.App .subStats-container .subStats-title {
+		width: 25%;
+	}
+	.App .subStats-container .subStats-title h3 {
+		font-size: 1rem;
+	}
+	.App .subStats-container .subStats-title h1 {
+		font-size: 1rem;
+		line-height: 20px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.App .india-stats {
+		width: 85%;
+	}
+	.App .india-stats .stat-row .stat img {
+		height: 50px;
+		width: 50px;
+	}
+	.App .india-stats .stat-row .stat h3 {
+		font-size: 1.2rem;
+		margin-top: 5px;
+	}
+	.App .india-stats .stat-row .stat h2 {
+		font-size: 2.5rem;
+	}
+	.App .subStats-container {
+		width: 98%;
+	}
+	.App .subStats-container .subStats-title {
+		width: 25%;
+	}
+	.App .subStats-container .subStats-title h3 {
+		font-size: 0.8rem;
+		margin-bottom: 5px;
+	}
+	.App .subStats-container .subStats-title h1 {
+		font-size: 0.8rem;
+		line-height: 15px;
+		letter-spacing: 0;
+	}
+}
