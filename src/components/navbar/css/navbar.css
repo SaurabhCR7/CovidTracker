@@ -1,0 +1,61 @@
+.navbar-container {
+  margin: 0 auto;
+  width: 97%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-container .logo .main-logo {
+  color: #873fa9;
+  font-family: Poppins;
+  font-weight: bold;
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-container .logo .main-logo span {
+  color: #ea6262;
+}
+
+.navbar-container .logo .sub-logo {
+  font-family: Poppins;
+  font-weight: bold;
+  color: #873fa9;
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: -10px;
+}
+
+.navbar-container .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-container .dropdown .dropdown-name {
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+.navbar-container .dropdown select {
+  border-radius: 5px;
+  border: 3px solid black;
+  height: 40px;
+  width: 100px;
+  margin-top: 7px;
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.navbar-container .dropdown select option {
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=navbar.css.map */

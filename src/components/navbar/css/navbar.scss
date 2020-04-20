@@ -1,0 +1,49 @@
+.navbar-container {
+	margin: 0 auto;
+	width: 97%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	.logo {
+		.main-logo {
+			color: #873fa9;
+			font-family: Poppins;
+			font-weight: bold;
+			margin: 0;
+			font-size: 2rem;
+			letter-spacing: 0.1rem;
+			span {
+				color: #ea6262;
+			}
+		}
+		.sub-logo {
+			font-family: Poppins;
+			font-weight: bold;
+			color: #873fa9;
+			margin: 0;
+			font-size: 1.2rem;
+			letter-spacing: 0.1rem;
+			margin-top: -10px;
+		}
+	}
+	.dropdown {
+		display: flex;
+		.dropdown-name {
+			font-family: Poppins;
+			font-size: 1rem;
+		}
+		select {
+			border-radius: 5px;
+			border: 3px solid black;
+			height: 40px;
+			width: 100px;
+			margin-top: 7px;
+			font-family: Poppins;
+			font-size: 0.9rem;
+			option {
+				font-family: Poppins;
+				font-size: 0.9rem;
+			}
+		}
+	}
+}
