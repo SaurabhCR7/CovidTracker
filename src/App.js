@@ -73,7 +73,7 @@ function App() {
 			<Navbar changeLanguage={changeLanguage} />
 			{hindi ? (
 				<h1 className="description">
-					अपने नज़दीकी इलाको में COVID<span>19</span> के मामलों को ट्रैक करें
+					अपने नज़दीकी इलाको में कोविड<span>19</span> के मामलों को ट्रैक करें
 				</h1>
 			) : (
 				<h1 className="description">
