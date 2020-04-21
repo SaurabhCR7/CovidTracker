@@ -143,12 +143,6 @@ function App() {
 				</div>
 			</div>
 			{hindi ? (
-				<h1 className="subheading">किसी राज्य पर टैप करें</h1>
-			) : (
-				<h1 className="subheading">TAP OVER A STATE/UT FOR MORE DETAILS</h1>
-			)}
-
-			{hindi ? (
 				<div className="subStats-container">
 					<div className="subStats-title">
 						<h3>राज्य</h3>
@@ -198,6 +192,11 @@ function App() {
 						border={'#F53232'}
 					/>
 				</div>
+			)}
+			{hindi ? (
+				<h1 className="subheading">किसी राज्य पर टैप करें</h1>
+			) : (
+				<h1 className="subheading">TAP OVER A STATE/UT FOR MORE DETAILS</h1>
 			)}
 			<svg className="india-map">
 				<path
