@@ -135,10 +135,11 @@
 	color: #535353;
 }
 .App .india-map {
-	height: 670px;
-	width: 620px;
+	height: 800px;
+	width: 800px;
 	margin-top: 0px;
-	margin-bottom: 100px;
+	margin-bottom: 0px;
+	transform: scale(0.9);
 }
 .App .india-map path {
 	transition: all 0.5s ease-in-out;
@@ -246,6 +247,15 @@
 		letter-spacing: 0rem;
 		margin-top: 15px;
 	}
+	.App .india-map {
+		width: 460px;
+		height: 500px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.App .india-map path {
+		transform: scale(0.6);
+	}
 }
 
 @media only screen and (max-width: 540px) {
@@ -288,16 +298,16 @@
 		letter-spacing: 0;
 	}
 	.App .india-map {
-		width: 90%;
-		margin-top: 40px;
+		width: 400px;
+		margin-top: 0px;
 		margin-bottom: 0px;
+		height: 450px;
 	}
 	.App .india-map path {
-		transform: scale(0.6);
+		transform: scale(0.5);
 	}
 	.App .column-name-container {
 		width: 97%;
-		margin-top: -200px;
 	}
 	.App .column-name-container .column-name-1 {
 		width: 40%;

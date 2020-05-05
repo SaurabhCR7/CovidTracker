@@ -5,6 +5,7 @@
   text-align: left;
   border-width: 5px;
   border-style: solid;
+  margin-bottom: 30px;
 }
 
 .subStats .subStats-title {
@@ -21,6 +22,7 @@
   font-size: 4.5rem;
   padding-left: 15px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1300px) {
