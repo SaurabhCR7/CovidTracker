@@ -937,31 +937,31 @@ function App() {
 				<div key={i.key} className="column-container">
 					<div
 						className="column-1"
-						style={{ backgroundColor: i.key % 2 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.name}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateTotal}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateActive}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateRecovered}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateDeaths}</p>
 					</div>
