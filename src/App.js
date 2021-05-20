@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import chroma from 'chroma-js';
 import CountUp from 'react-countup';
 import './App.css';
@@ -25,32 +24,32 @@ function App() {
 	const [stateDeaths, setStateDeaths] = useState(0);
 	const [hindi, setHindi] = useState(false);
 	useEffect(() => {
-		axios({
-			method: 'get',
-			url: 'https://api.covid19india.org/data.json',
-		}).then((res) => {
-			setTotalCases(res.data.statewise[0].confirmed);
-			setActiveCases(res.data.statewise[0].active);
-			setRecovered(res.data.statewise[0].recovered);
-			setDeaths(res.data.statewise[0].deaths);
-			res.data.statewise
-				.sort((a, b) => a.state.localeCompare(b.state))
-				.map((i) => {
-					if (i.state !== 'Total') {
-						setStateData((stateData) => [
-							...stateData,
-							{
-								key: stateData.length,
-								name: i.state,
-								stateTotal: i.confirmed,
-								stateActive: i.active,
-								stateRecovered: i.recovered,
-								stateDeaths: i.deaths,
-							},
-						]);
-					}
-				});
-		});
+		fetch('https://api.covid19india.org/data.json')
+			.then((response) => response.json())
+			.then((res) => {
+				console.log(res);
+				setTotalCases(res.statewise[0].confirmed);
+				setActiveCases(res.statewise[0].active);
+				setRecovered(res.statewise[0].recovered);
+				setDeaths(res.statewise[0].deaths);
+				res.statewise
+					.sort((a, b) => a.state.localeCompare(b.state))
+					.map((i) => {
+						if (i.state !== 'Total') {
+							setStateData((stateData) => [
+								...stateData,
+								{
+									key: stateData.length,
+									name: i.state,
+									stateTotal: i.confirmed,
+									stateActive: i.active,
+									stateRecovered: i.recovered,
+									stateDeaths: i.deaths,
+								},
+							]);
+						}
+					});
+			});
 	}, []);
 	const updateStateData = (name, active, recovered, deaths) => {
 		setStateName(name);
@@ -63,15 +62,16 @@ function App() {
 	};
 	const colorRange = chroma
 		.scale([
-			'#FFC3C3',
-			'#F93F3F',
-			'#F81B1B',
-			'#F22424',
-			'#F20808',
-			'#D31515',
-			'#8A0D0D',
+			'#E9967A',
+			'#F08080',
+			'#CD5C5C',
+			'#DC143C',
+			'#FF0000',
+			'#FF4500',
+			'#a52a2a',
+			'#8b4513',
 		])
-		.domain([0, 3000]);
+		.domain([0, 700000]);
 	return (
 		<div className="App">
 			<Navbar changeLanguage={changeLanguage} />
@@ -935,31 +935,31 @@ function App() {
 				<div key={i.key} className="column-container">
 					<div
 						className="column-1"
-						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 === 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.name}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 === 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateTotal}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 === 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateActive}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 === 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateRecovered}</p>
 					</div>
 					<div
 						className="column-2"
-						style={{ backgroundColor: i.key % 2 == 0 ? '#f0f0f0' : '#dcdcdc' }}
+						style={{ backgroundColor: i.key % 2 === 0 ? '#f0f0f0' : '#dcdcdc' }}
 					>
 						<p>{i.stateDeaths}</p>
 					</div>
