@@ -1,25 +1,14 @@
-import React from 'react';
-import './css/navbar.css';
+import './style.css';
 
-function Navbar(props) {
-	const changeLang = (e) => {
-		if (e.target.value === 'English') props.changeLanguage(false);
-		else props.changeLanguage(true);
-	};
+function Navbar() {
 	return (
-		<div className="navbar-container">
-			<div className="logo">
-				<p className="main-logo">
-					COVID<span>19</span>
-				</p>
-				<p className="sub-logo">TRACKER</p>
-			</div>
-			<div className="dropdown">
-				<p className="dropdown-name">Language :&nbsp; </p>
-				<select id="language" onChange={(e) => changeLang(e)}>
-					<option value="English">English</option>
-					<option value="Hindi">हिन्दी</option>
-				</select>
+		<div className="nav-container">
+			<p className="nav-logo">Covid-19 Tracker</p>
+			<div className="nav-icon-container">
+				<i class="fas fa-home"></i>
+				<i class="fas fa-globe-americas"></i>
+				<i class="fas fa-syringe"></i>
+				<i class="fas fa-phone-alt"></i>
 			</div>
 		</div>
 	);

@@ -1,0 +1,68 @@
+.lgcard-container {
+	height: 180px;
+	width: 430px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 40px;
+	padding: 20px 20px;
+	background-color: #5734d1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.lgcard-title {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+}
+
+.lgcard-location {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.lgcard-subcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lgcard-count-container {
+	border: 2px solid white;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	height: 50px;
+	padding: 0px 20px;
+}
+
+.lgcard-count-container i {
+	color: white;
+	font-size: 1.2rem;
+	margin-right: 10px;
+}
+
+.lgcard-count {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+}
+
+.lgcard-loc-icon {
+	background-color: #d0c564;
+	padding: 10px;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.lgcard-loc-icon i {
+	font-size: 1.5rem;
+}

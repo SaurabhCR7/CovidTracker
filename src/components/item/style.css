@@ -1,0 +1,36 @@
+.item {
+	width: 90%;
+	height: 90px;
+	background: #ffffff;
+	border: 1px solid #d7d7d7;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 10px;
+	margin-bottom: 10px;
+}
+
+.item-name {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	width: 70%;
+}
+
+.item-count-container {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.item-count {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.item-add {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	color: #b86d6d;
+}

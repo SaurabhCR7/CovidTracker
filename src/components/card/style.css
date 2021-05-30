@@ -1,0 +1,33 @@
+.card-container {
+	height: 180px;
+	width: 180px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 40px;
+	padding: 20px;
+}
+
+.card-container i {
+	font-size: 3rem;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.card-heading {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.card-number {
+	font-size: 2rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: white;
+}
+
+.card-add {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+}

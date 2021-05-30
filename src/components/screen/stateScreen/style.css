@@ -1,0 +1,30 @@
+.state-screen-container {
+	padding: 0px 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cards-container {
+	display: flex;
+}
+
+.stats-container {
+	width: 470px;
+	height: 470px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+
+.stats-subcontainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.most-min-container {
+	height: 470px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
