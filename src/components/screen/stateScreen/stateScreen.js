@@ -37,7 +37,7 @@ function StateScreen() {
 				let minState = '';
 
 				for (let item of data.statewise) {
-					let count = parseInt(item.confirmed);
+					let count = parseInt(item.active);
 					if (minCount === 0) {
 						minCount = count;
 					}
