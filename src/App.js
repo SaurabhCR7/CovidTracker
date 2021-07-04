@@ -41,6 +41,7 @@ function App() {
 			<Navbar switchScreen={switchScreen} />
 			{screen1 ? <StateScreen /> : null}
 			{screen2 ? <CountryScreen /> : null}
+			{screen3 ? null : null}
 		</div>
 	);
 }
